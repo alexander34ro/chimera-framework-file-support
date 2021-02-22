@@ -3,12 +3,12 @@
   "version": "0.0.95",
   "description": "Language agnostic framework for stand-alone and distributed computing",
   "bin": {
-    "chimera": "tools/run.js",
-    "chimera-echo": "tools/echoMany.js",
-    "chimera-eisn": "tools/eisn.js",
-    "chimera-init-cms": "tools/init-cms.js",
-    "chimera-send": "tools/send.js",
-    "chimera-serve": "tools/serve.js"
+    "xchimera": "tools/run.js",
+    "xchimera-echo": "tools/echoMany.js",
+    "xchimera-eisn": "tools/eisn.js",
+    "xchimera-init-cms": "tools/init-cms.js",
+    "xchimera-send": "tools/send.js",
+    "xchimera-serve": "tools/serve.js"
   },
   "scripts": {
     "test": "mocha"
@@ -19,7 +19,7 @@
     "orchestration",
     "language agnostic"
   ],
-  "author": "goFrendi",
+  "author": "alexander34ro",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -52,12 +52,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/goFrendiAsgard/chimera-framework.git"
+    "url": "https://github.com/alexander34ro/chimera-framework-file-support.git"
   },
   "bugs": {
-    "url": "https://github.com/goFrendiAsgard/chimera-framework/issues"
+    "url": "https://github.com/alexander34ro/chimera-framework-file-support/issues"
   },
-  "homepage": "https://github.com/goFrendiAsgard/chimera-framework#readme",
+  "homepage": "https://github.com/alexander34ro/chimera-framework-file-support",
   "main": "index.js",
   "directories": {
     "test": "tests"
