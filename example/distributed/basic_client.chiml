@@ -1,0 +1,11 @@
+ins: x, y
+out: output
+vars:
+  remoteUrl: 'http://localhost:3000'
+  chain: 'basic.chiml'
+do:
+
+  - parallel:
+    - (remoteUrl, chain, x, y) -> [$.send] -> fx
+
+  - (fx) -> {$.concat} -> output
