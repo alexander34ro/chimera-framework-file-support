@@ -1,7 +1,7 @@
 ins: x, y
 out: output
 vars:
-  remoteUrl: 'http://192.38.143.138:3000'
+  remoteUrl: 'http://192.168.43.230.:3000'
   chain: 'basic.chiml'
 do:
 
