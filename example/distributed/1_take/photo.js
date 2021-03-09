@@ -3,7 +3,7 @@ const exec = require('child_process').exec;
 const os = require('os');
 
 if (require.main === module) {
-  const path = '1_camera_sample_' + Date.now() + '.jpg';
+  const path = '_camera_sample_' + Date.now() + '.jpg';
   if (os.platform() === 'android') {
     exec(
       `termux-camera-photo -c 1 ${path}`,
