@@ -1,0 +1,15 @@
+ins:
+out: output
+verbose: 0
+vars:
+  i: 0
+  remoteUrl: 'http://localhost:3000'
+  chain: 'basic.chiml'
+do:
+  - while: i < 0
+    do:
+      - node 2_take/video.js -> out_0
+      - (remoteUrl, chain, out_0, out_0) -> [$.send] -> fx
+      - i -> (x) => {return x+1} -> i
+
+  - (fx) -> {$.concat} -> output

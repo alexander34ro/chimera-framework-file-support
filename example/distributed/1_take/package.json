@@ -1,0 +1,16 @@
+{
+  "name": "1_take",
+  "version": "1.0.0",
+  "description": "",
+  "main": "photo.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "node-webcam": "^0.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
