@@ -1,4 +1,5 @@
 ins: x
 out: output
 do:
-  - |({x}) -> {$.util.getInspectedObject} -> output
+  - (x) -> python 1_analyzer/face.py -> out_0
+  - |({x, out_0}) -> {$.util.getInspectedObject} -> output

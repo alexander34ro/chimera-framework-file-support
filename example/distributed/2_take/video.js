@@ -3,11 +3,11 @@ const os = require('os');
 
 if (require.main === module) {
   const path = '_video_sample_' + Date.now() + '.mp4';
-  const input = '-i default';
   const framerate = '-framerate 30';
   const time = '-t 4';
 
   let format;
+  let input;
 
   if (os.platform() === 'android') {
     exec(
@@ -18,6 +18,7 @@ if (require.main === module) {
     );
   } else if (os.platform() === 'darwin') {
     format = '-f avfoundation';
+    input = '-i default';
     exec(
       `ffmpeg ${format} ${framerate} ${input} ${time} ${path}`,
       () => {
@@ -26,6 +27,7 @@ if (require.main === module) {
     );
   } else {
     format = '-f v4l2';
+    input = '-i /dev/video0'
     exec(
       `ffmpeg ${format} ${framerate} ${input} ${time} ${path}`,
       () => {
