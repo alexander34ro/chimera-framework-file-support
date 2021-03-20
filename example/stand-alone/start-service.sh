@@ -1,1 +1,0 @@
-env PUBLISHED="." chimera-serve
