@@ -1,4 +1,4 @@
 ```
 pip install opencv-python
-python face.py
+python face.py path-to-video
 ```

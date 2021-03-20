@@ -4,15 +4,13 @@ import sys
 import json
 
 def color(file):
-    faceCascade = cv2.CascadeClassifier(
-        '1_analyzer/Cascades/haarcascade_frontalface_default.xml')
+    faceCascade = cv2.CascadeClassifier('1_analyzer/cascade.xml')
     cap = cv2.VideoCapture(file)
 
     while(cap.isOpened()):
         ret, img = cap.read()
 
         try:
-            #img = cv2.flip(img, -1)
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             faces = faceCascade.detectMultiScale(
                 gray,
@@ -26,8 +24,6 @@ def color(file):
                 roi_color = img[y:y+h, x:x+w]
 
             cv2.imshow('frame', img)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
         except: break
 
     cap.release()
