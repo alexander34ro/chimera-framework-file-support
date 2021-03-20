@@ -24,6 +24,8 @@ def color(file):
                 roi_color = img[y:y+h, x:x+w]
 
             cv2.imshow('frame', img)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
         except: break
 
     cap.release()

@@ -5,8 +5,7 @@ vars:
   remoteUrl: 'http://localhost:3000'
   chain: 'save_file.chiml'
 do:
-  do:
-    - node 1_take/photo.js -> out_0
-    - (remoteUrl, chain, out_0, out_0) -> [$.send] -> fx
+  - node 1_take/photo.js -> out_0
+  - (remoteUrl, chain, out_0, out_0) -> [$.send] -> fx
 
   - (fx) -> {$.concat} -> output

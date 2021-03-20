@@ -4,7 +4,7 @@ verbose: 0
 vars:
   i: 0
   remoteUrl: 'http://localhost:3000'
-  chain: 'basic.chiml'
+  chain: 'face_analyzer.chiml'
 do:
   - while: i < 3
     do:
