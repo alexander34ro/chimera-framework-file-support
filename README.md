@@ -12,7 +12,7 @@
 
 ### Updated version of the Chimera Framework for use in orchestrating the Affinity Platform
 
-** Enhanced with support for image/video streaming **
+**Enhanced with support for image/video streaming**
 
 Chimera-Framework is a language agnostic framework for standalone and distributed computing. Chimera-Framework is written in `Node.Js`. As a component based software engineering framework, Chimera-Framework allows you to orchestrate several components to achieve a greater goal. The components can be written in any programming language. Even an executable binary file can also serve as component.
 
