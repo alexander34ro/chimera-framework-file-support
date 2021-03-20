@@ -10,3 +10,4 @@ coverage/
 upload-coverage.sh
 profile.log
 isolate-*.log
+.DS_Store
