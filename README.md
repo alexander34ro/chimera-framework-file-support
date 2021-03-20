@@ -57,8 +57,6 @@ Hi Naomi today is Mon Feb  5 22:10:37 WIB 2018
 
 * [Stand alone computing](https://github.com/goFrendiAsgard/chimera-framework/wiki/Getting-Started#stand-alone-computing)
 * [Distributed computing](https://github.com/goFrendiAsgard/chimera-framework/wiki/Getting-Started#distributed-computing)
-* [Creating simple web application](https://github.com/goFrendiAsgard/chimera-framework/wiki/Getting-Started#web-app)
-* [Content Management System (CMS)](https://github.com/goFrendiAsgard/chimera-framework/wiki/Content-Management-System-(CMS))
 
 # License
 Chimera-Framework is released under the MIT License.
