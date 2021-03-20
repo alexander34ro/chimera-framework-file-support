@@ -62,4 +62,6 @@ Hi Naomi today is Mon Feb  5 22:10:37 WIB 2018
 Chimera-Framework is released under the MIT License.
 
 # Citation
-If you publish any article related to Chimera-Framework, please cite our paper on [http://ieeexplore.ieee.org/document/8320654/](http://ieeexplore.ieee.org/document/8320654/)
+If you publish any article related to the Affinity Platform, please cite our paper on [https://dl.acm.org/doi/10.1145/3410530.3414371](https://dl.acm.org/doi/10.1145/3410530.3414371)
+
+If you publish any article related to Chimera-Framework, please cite their paper on [http://ieeexplore.ieee.org/document/8320654/](http://ieeexplore.ieee.org/document/8320654/)
