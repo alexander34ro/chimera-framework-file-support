@@ -1,8 +1,5 @@
-<h1 align="center">Chimera-Framework</h1>
+<h1 align="center">Chimera-Framework Affinity Update (xchimera)</h1>
 
-<div align="center">
-  <img src="logo.png" />
-</div>
 <br />
 <div align="center">
   <strong>Language Agnostic Framework for Stand-alone and Distributed Computing</strong>
@@ -12,6 +9,10 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![codecov](https://codecov.io/gh/goFrendiAsgard/chimera-framework/branch/master/graph/badge.svg)](https://codecov.io/gh/goFrendiAsgard/chimera-framework)
 <a href="https://gitter.im/chimera-framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter"></a>
+
+### Updated version of the Chimera Framework for use in orchestrating the Affinity Platform
+
+** Enhanced with support for image/video streaming **
 
 Chimera-Framework is a language agnostic framework for standalone and distributed computing. Chimera-Framework is written in `Node.Js`. As a component based software engineering framework, Chimera-Framework allows you to orchestrate several components to achieve a greater goal. The components can be written in any programming language. Even an executable binary file can also serve as component.
 
@@ -32,7 +33,7 @@ do:
 gofrendi@asgard:~$ date
 Mon Feb  5 22:10:37 WIB 2018
 
-gofrendi@asgard:~$ chimera hi.chiml Naomi
+gofrendi@asgard:~$ xchimera hi.chiml Naomi
 Hi Naomi today is Mon Feb  5 22:10:37 WIB 2018
 ```
 
@@ -44,13 +45,13 @@ Hi Naomi today is Mon Feb  5 22:10:37 WIB 2018
    sudo apt-get install nodejs npm
    ```
 
-2. Install Chimera-Framework by invoking:
+2. Install *xchimera* by invoking:
 
    ```bash
-   sudo npm install --global chimera-framework
+   npm link
    ```
 
-3. Visit our [wiki](https://github.com/goFrendiAsgard/chimera-framework/wiki/) for more information.
+3. Visit the Chimera [wiki](https://github.com/goFrendiAsgard/chimera-framework/wiki/) for more information.
 
 # Examples
 
