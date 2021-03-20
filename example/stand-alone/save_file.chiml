@@ -1,0 +1,4 @@
+ins: x
+out: output
+do:
+  - |({x}) -> {$.util.getInspectedObject} -> output
