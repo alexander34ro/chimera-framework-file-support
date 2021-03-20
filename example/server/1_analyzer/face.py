@@ -35,4 +35,4 @@ def color(file):
 if __name__ == '__main__':
     file = sys.argv[1]
     color(file)
-    print(json.dumps("done"))
+    print(json.dumps("Done"))

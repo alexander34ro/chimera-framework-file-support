@@ -2,14 +2,11 @@ ins:
 out: output
 verbose: 0
 vars:
-  i: 0
   remoteUrl: 'http://localhost:3000'
-  chain: 'basic.chiml'
+  chain: 'save_file.chiml'
 do:
-  - while: i < 3
-    do:
-      - node 1_take/photo.js -> out_0
-      - (remoteUrl, chain, out_0, out_0) -> [$.send] -> fx
-      - i -> (x) => {return x+1} -> i
+  do:
+    - node 1_take/photo.js -> out_0
+    - (remoteUrl, chain, out_0, out_0) -> [$.send] -> fx
 
   - (fx) -> {$.concat} -> output
