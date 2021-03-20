@@ -1,6 +1,6 @@
 {
   "name": "chimera-framework-file-support",
-  "version": "0.0.95",
+  "version": "0.0.96",
   "description": "Language agnostic framework for stand-alone and distributed computing",
   "bin": {
     "xchimera": "tools/run.js",
