@@ -2,7 +2,7 @@ const exec = require('child_process').exec;
 const os = require('os');
 
 if (require.main === module) {
-  const path = '_video_sample_' + Date.now() + '.mp4';
+  const path = '_' + os.platform() + '_video_sample_' + Date.now() + '.mp4';
   const framerate = '-framerate 30';
   const time = '-t 4';
 
