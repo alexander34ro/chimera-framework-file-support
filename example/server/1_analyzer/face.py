@@ -37,5 +37,6 @@ def color(file):
 
 if __name__ == '__main__':
     file = sys.argv[1]
+    print(file)
     color(file)
     print(json.dumps("Done"))
