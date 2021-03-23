@@ -4,6 +4,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Flatten
 from tensorflow.keras.layers import Conv2D
 from tensorflow.keras.layers import MaxPooling2D
+# import tensorflow as tf
 import sys
 import json
 import os
@@ -28,7 +29,7 @@ def create_model():
     model.add(Dropout(0.5))
     model.add(Dense(7, activation='softmax'))
 
-    model.load_weights('2_emotion_detector/model.h5')
+    model.load_weights('model.h5')
 
     return model
 
@@ -56,6 +57,10 @@ def emotion(file):
             roi_gray = gray[y:y + h, x:x + w]
             cropped_img = np.expand_dims(np.expand_dims(cv2.resize(roi_gray, (48, 48)), -1), 0)
             prediction = model.predict(cropped_img)
+
+            # interpreter = tf.lite.Interpreter(model_path="model.tflite")
+            # interpreter.allocate_tensors()
+
             maxindex = int(np.argmax(prediction))
             cv2.putText(frame, emotion_dict[maxindex], (x+20, y-60), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
