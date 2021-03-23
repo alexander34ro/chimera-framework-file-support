@@ -4,7 +4,8 @@ import sys
 import json
 
 def color(file):
-    faceCascade = cv2.CascadeClassifier('1_analyzer/cascade.xml')
+    print(json.dumps("yo"))
+    faceCascade = cv2.CascadeClassifier('cascade.xml')
     cap = cv2.VideoCapture(file)
 
     while(cap.isOpened()):

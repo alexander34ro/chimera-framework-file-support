@@ -1,0 +1,5 @@
+ins: x
+out: output
+do:
+  - (x) -> python 2_emotion_detector/emotions.py -> out_0
+  - |({x, out_0}) -> {$.util.getInspectedObject} -> output
