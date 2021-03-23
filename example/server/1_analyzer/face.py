@@ -4,7 +4,6 @@ import sys
 import json
 
 def color(file):
-    print(json.dumps("yo"))
     faceCascade = cv2.CascadeClassifier('cascade.xml')
     cap = cv2.VideoCapture(file)
 
@@ -37,6 +36,5 @@ def color(file):
 
 if __name__ == '__main__':
     file = sys.argv[1]
-    print(file)
     color(file)
     print(json.dumps("Done"))
