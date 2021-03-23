@@ -20,7 +20,7 @@ pip install opencv-python
 
 # Server
 
-There are 2 options for the server:
+There are 3 options for the server:
 
 1. Just save the file received from the client:
 
@@ -28,15 +28,21 @@ There are 2 options for the server:
 xchimera-serve save_file.chiml
 ```
 
-2. Due some face detection on the received file:
+2. Detect faces in the received file:
 
 ```bash
 xchimera-serve face_analyzer.chiml
 ```
 
+3. Analyze emotions for the faces in the received file:
+
+```bash
+xchimera-serve emotion_detector.chiml
+```
+
 # Client
 
-There are 2 options for the client:
+There are 3 options for the client:
 
 1. Send a photo:
 
@@ -54,4 +60,13 @@ cd 2_take
 npm i
 cd ..
 xchimera send_video.chiml
+```
+
+3. Send 3 videos for emotion detection:
+
+```bash
+cd 2_take
+npm i
+cd ..
+xchimera send_video_to_emotion_detector.chiml
 ```
