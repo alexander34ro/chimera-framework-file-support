@@ -1,0 +1,1 @@
+for run in {1..10}; do time sh run_with_exit.sh; done
