@@ -5,7 +5,7 @@ match="Done"
 $command > "$log" 2>&1 &
 pid=$!
 
-while sleep 0.5
+while sleep 1
 do
     if fgrep --quiet "$match" "$log"
     then
