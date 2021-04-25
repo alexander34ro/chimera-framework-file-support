@@ -1,3 +1,5 @@
+#!/bin/bash
+echo "Bash version ${BASH_VERSION}..."
 command="xchimera emotion_detector.chiml _darwin_video_sample_1616869585269.mp4"
 log="prog.log"
 match="Done"

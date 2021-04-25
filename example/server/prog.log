@@ -1,2 +1,29 @@
-[33m"Done"
-[0m{ x: '_darwin_video_sample_1616869585269.mp4', out_0: 'Done' }
+[31mTraceback (most recent call last):
+  File "2_emotion_detector/emotions.py", line 60, in <module>
+    emotion(file)
+  File "2_emotion_detector/emotions.py", line 11, in emotion
+    interpreter = lite.Interpreter(model_path="model7.tflite")
+  File "/Users/alexardelean/.pyenv/versions/3.7.9/lib/python3.7/site-packages/tensorflow_core/lite/python/interpreter.py", line 209, in __init__
+    model_path, self._custom_op_registerers))
+ValueError: Could not open 'model7.tflite'.
+[0mError: Command failed: (chimera-echo "_darwin_video_sample_1616869585269.mp4") | python 2_emotion_detector/emotions.py "_darwin_video_sample_1616869585269.mp4"
+Traceback (most recent call last):
+  File "2_emotion_detector/emotions.py", line 60, in <module>
+    emotion(file)
+  File "2_emotion_detector/emotions.py", line 11, in emotion
+    interpreter = lite.Interpreter(model_path="model7.tflite")
+  File "/Users/alexardelean/.pyenv/versions/3.7.9/lib/python3.7/site-packages/tensorflow_core/lite/python/interpreter.py", line 209, in __init__
+    model_path, self._custom_op_registerers))
+ValueError: Could not open 'model7.tflite'.
+
+    at ChildProcess.exithandler (child_process.js:308:12)
+    at ChildProcess.emit (events.js:314:20)
+    at maybeClose (internal/child_process.js:1047:16)
+    at Socket.<anonymous> (internal/child_process.js:438:11)
+    at Socket.emit (events.js:314:20)
+    at Pipe.<anonymous> (net.js:672:12) {
+  killed: false,
+  code: 1,
+  signal: null,
+  cmd: '(chimera-echo "_darwin_video_sample_1616869585269.mp4") | python 2_emotion_detector/emotions.py "_darwin_video_sample_1616869585269.mp4"'
+}
